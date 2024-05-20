@@ -1,0 +1,444 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{C065176B-3E81-4F3D-B76F-4B6537AD7818}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>SpineView2</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <TargetExt>.wlx</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <TargetExt>.wlx</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;SPINEVIEW2_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\work\SpineView2\spine-cpp\include;D:\work\SpineView2\SDL\include;D:\work\SpineView2\spine-sdl;D:\work\SpineView2\SDL2-ttf\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>D:\work\SpineView2\SDL\lib\x86;D:\work\SpineView2\SDL2-ttf\lib\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>SDL2-staticd.lib;SDL2_ttfd-static.lib;imm32.lib;winmm.lib;setupapi.lib;version.lib;freetyped.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ModuleDefinitionFile>.\listplug.def</ModuleDefinitionFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;_USRDLL;SPINEVIEW2_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;SPINEVIEW2_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\work\SpineView2\spine-cpp\include;D:\work\SpineView2\SDL\include;D:\work\SpineView2\spine-sdl;D:\work\SpineView2\SDL2-ttf\include;</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>D:\work\SpineView2\SDL\lib\x86;D:\work\SpineView2\SDL2-ttf\lib\x86;</AdditionalLibraryDirectories>
+      <AdditionalDependencies>SDL2-static.lib;SDL2_ttf-static.lib;imm32.lib;winmm.lib;setupapi.lib;version.lib;freetyped.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ModuleDefinitionFile>.\listplug.def</ModuleDefinitionFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>NDEBUG;_WINDOWS;_USRDLL;SPINEVIEW2_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+    <Text Include="SDL2-ttf\lib\x86\LICENSE.freetype.txt" />
+    <Text Include="SDL2-ttf\lib\x86\LICENSE.harfbuzz.txt" />
+    <Text Include="SDL2-ttf\lib\x86\LICENSE.zlib.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="cunicode.h" />
+    <ClInclude Include="listplug.h" />
+    <ClInclude Include="ListPlugWnd.h" />
+    <ClInclude Include="mainwindow.h" />
+    <ClInclude Include="MySdlText.h" />
+    <ClInclude Include="MySpineSdl.h" />
+    <ClInclude Include="SDL2-ttf\include\SDL_ttf.h" />
+    <ClInclude Include="SDL\include\begin_code.h" />
+    <ClInclude Include="SDL\include\close_code.h" />
+    <ClInclude Include="SDL\include\SDL.h" />
+    <ClInclude Include="SDL\include\SDL_assert.h" />
+    <ClInclude Include="SDL\include\SDL_atomic.h" />
+    <ClInclude Include="SDL\include\SDL_audio.h" />
+    <ClInclude Include="SDL\include\SDL_bits.h" />
+    <ClInclude Include="SDL\include\SDL_blendmode.h" />
+    <ClInclude Include="SDL\include\SDL_clipboard.h" />
+    <ClInclude Include="SDL\include\SDL_config.h" />
+    <ClInclude Include="SDL\include\SDL_cpuinfo.h" />
+    <ClInclude Include="SDL\include\SDL_egl.h" />
+    <ClInclude Include="SDL\include\SDL_endian.h" />
+    <ClInclude Include="SDL\include\SDL_error.h" />
+    <ClInclude Include="SDL\include\SDL_events.h" />
+    <ClInclude Include="SDL\include\SDL_filesystem.h" />
+    <ClInclude Include="SDL\include\SDL_gamecontroller.h" />
+    <ClInclude Include="SDL\include\SDL_gesture.h" />
+    <ClInclude Include="SDL\include\SDL_guid.h" />
+    <ClInclude Include="SDL\include\SDL_haptic.h" />
+    <ClInclude Include="SDL\include\SDL_hidapi.h" />
+    <ClInclude Include="SDL\include\SDL_hints.h" />
+    <ClInclude Include="SDL\include\SDL_joystick.h" />
+    <ClInclude Include="SDL\include\SDL_keyboard.h" />
+    <ClInclude Include="SDL\include\SDL_keycode.h" />
+    <ClInclude Include="SDL\include\SDL_loadso.h" />
+    <ClInclude Include="SDL\include\SDL_locale.h" />
+    <ClInclude Include="SDL\include\SDL_log.h" />
+    <ClInclude Include="SDL\include\SDL_main.h" />
+    <ClInclude Include="SDL\include\SDL_messagebox.h" />
+    <ClInclude Include="SDL\include\SDL_metal.h" />
+    <ClInclude Include="SDL\include\SDL_misc.h" />
+    <ClInclude Include="SDL\include\SDL_mouse.h" />
+    <ClInclude Include="SDL\include\SDL_mutex.h" />
+    <ClInclude Include="SDL\include\SDL_name.h" />
+    <ClInclude Include="SDL\include\SDL_opengl.h" />
+    <ClInclude Include="SDL\include\SDL_opengles.h" />
+    <ClInclude Include="SDL\include\SDL_opengles2.h" />
+    <ClInclude Include="SDL\include\SDL_opengles2_gl2.h" />
+    <ClInclude Include="SDL\include\SDL_opengles2_gl2ext.h" />
+    <ClInclude Include="SDL\include\SDL_opengles2_gl2platform.h" />
+    <ClInclude Include="SDL\include\SDL_opengles2_khrplatform.h" />
+    <ClInclude Include="SDL\include\SDL_opengl_glext.h" />
+    <ClInclude Include="SDL\include\SDL_pixels.h" />
+    <ClInclude Include="SDL\include\SDL_platform.h" />
+    <ClInclude Include="SDL\include\SDL_power.h" />
+    <ClInclude Include="SDL\include\SDL_quit.h" />
+    <ClInclude Include="SDL\include\SDL_rect.h" />
+    <ClInclude Include="SDL\include\SDL_render.h" />
+    <ClInclude Include="SDL\include\SDL_revision.h" />
+    <ClInclude Include="SDL\include\SDL_rwops.h" />
+    <ClInclude Include="SDL\include\SDL_scancode.h" />
+    <ClInclude Include="SDL\include\SDL_sensor.h" />
+    <ClInclude Include="SDL\include\SDL_shape.h" />
+    <ClInclude Include="SDL\include\SDL_stdinc.h" />
+    <ClInclude Include="SDL\include\SDL_surface.h" />
+    <ClInclude Include="SDL\include\SDL_system.h" />
+    <ClInclude Include="SDL\include\SDL_syswm.h" />
+    <ClInclude Include="SDL\include\SDL_test.h" />
+    <ClInclude Include="SDL\include\SDL_test_assert.h" />
+    <ClInclude Include="SDL\include\SDL_test_common.h" />
+    <ClInclude Include="SDL\include\SDL_test_compare.h" />
+    <ClInclude Include="SDL\include\SDL_test_crc32.h" />
+    <ClInclude Include="SDL\include\SDL_test_font.h" />
+    <ClInclude Include="SDL\include\SDL_test_fuzzer.h" />
+    <ClInclude Include="SDL\include\SDL_test_harness.h" />
+    <ClInclude Include="SDL\include\SDL_test_images.h" />
+    <ClInclude Include="SDL\include\SDL_test_log.h" />
+    <ClInclude Include="SDL\include\SDL_test_md5.h" />
+    <ClInclude Include="SDL\include\SDL_test_memory.h" />
+    <ClInclude Include="SDL\include\SDL_test_random.h" />
+    <ClInclude Include="SDL\include\SDL_thread.h" />
+    <ClInclude Include="SDL\include\SDL_timer.h" />
+    <ClInclude Include="SDL\include\SDL_touch.h" />
+    <ClInclude Include="SDL\include\SDL_types.h" />
+    <ClInclude Include="SDL\include\SDL_version.h" />
+    <ClInclude Include="SDL\include\SDL_video.h" />
+    <ClInclude Include="SDL\include\SDL_vulkan.h" />
+    <ClInclude Include="spine-cpp\include\spine\Animation.h" />
+    <ClInclude Include="spine-cpp\include\spine\AnimationState.h" />
+    <ClInclude Include="spine-cpp\include\spine\AnimationStateData.h" />
+    <ClInclude Include="spine-cpp\include\spine\Atlas.h" />
+    <ClInclude Include="spine-cpp\include\spine\AtlasAttachmentLoader.h" />
+    <ClInclude Include="spine-cpp\include\spine\Attachment.h" />
+    <ClInclude Include="spine-cpp\include\spine\AttachmentLoader.h" />
+    <ClInclude Include="spine-cpp\include\spine\AttachmentTimeline.h" />
+    <ClInclude Include="spine-cpp\include\spine\AttachmentType.h" />
+    <ClInclude Include="spine-cpp\include\spine\BlendMode.h" />
+    <ClInclude Include="spine-cpp\include\spine\Bone.h" />
+    <ClInclude Include="spine-cpp\include\spine\BoneData.h" />
+    <ClInclude Include="spine-cpp\include\spine\BoundingBoxAttachment.h" />
+    <ClInclude Include="spine-cpp\include\spine\ClippingAttachment.h" />
+    <ClInclude Include="spine-cpp\include\spine\Color.h" />
+    <ClInclude Include="spine-cpp\include\spine\ColorTimeline.h" />
+    <ClInclude Include="spine-cpp\include\spine\Constraint.h" />
+    <ClInclude Include="spine-cpp\include\spine\ContainerUtil.h" />
+    <ClInclude Include="spine-cpp\include\spine\CurveTimeline.h" />
+    <ClInclude Include="spine-cpp\include\spine\Debug.h" />
+    <ClInclude Include="spine-cpp\include\spine\DeformTimeline.h" />
+    <ClInclude Include="spine-cpp\include\spine\dll.h" />
+    <ClInclude Include="spine-cpp\include\spine\DrawOrderTimeline.h" />
+    <ClInclude Include="spine-cpp\include\spine\Event.h" />
+    <ClInclude Include="spine-cpp\include\spine\EventData.h" />
+    <ClInclude Include="spine-cpp\include\spine\EventTimeline.h" />
+    <ClInclude Include="spine-cpp\include\spine\Extension.h" />
+    <ClInclude Include="spine-cpp\include\spine\HashMap.h" />
+    <ClInclude Include="spine-cpp\include\spine\HasRendererObject.h" />
+    <ClInclude Include="spine-cpp\include\spine\IkConstraint.h" />
+    <ClInclude Include="spine-cpp\include\spine\IkConstraintData.h" />
+    <ClInclude Include="spine-cpp\include\spine\IkConstraintTimeline.h" />
+    <ClInclude Include="spine-cpp\include\spine\Json.h" />
+    <ClInclude Include="spine-cpp\include\spine\LinkedMesh.h" />
+    <ClInclude Include="spine-cpp\include\spine\MathUtil.h" />
+    <ClInclude Include="spine-cpp\include\spine\MeshAttachment.h" />
+    <ClInclude Include="spine-cpp\include\spine\MixBlend.h" />
+    <ClInclude Include="spine-cpp\include\spine\MixDirection.h" />
+    <ClInclude Include="spine-cpp\include\spine\PathAttachment.h" />
+    <ClInclude Include="spine-cpp\include\spine\PathConstraint.h" />
+    <ClInclude Include="spine-cpp\include\spine\PathConstraintData.h" />
+    <ClInclude Include="spine-cpp\include\spine\PathConstraintMixTimeline.h" />
+    <ClInclude Include="spine-cpp\include\spine\PathConstraintPositionTimeline.h" />
+    <ClInclude Include="spine-cpp\include\spine\PathConstraintSpacingTimeline.h" />
+    <ClInclude Include="spine-cpp\include\spine\PointAttachment.h" />
+    <ClInclude Include="spine-cpp\include\spine\Pool.h" />
+    <ClInclude Include="spine-cpp\include\spine\PositionMode.h" />
+    <ClInclude Include="spine-cpp\include\spine\RegionAttachment.h" />
+    <ClInclude Include="spine-cpp\include\spine\RotateMode.h" />
+    <ClInclude Include="spine-cpp\include\spine\RotateTimeline.h" />
+    <ClInclude Include="spine-cpp\include\spine\RTTI.h" />
+    <ClInclude Include="spine-cpp\include\spine\ScaleTimeline.h" />
+    <ClInclude Include="spine-cpp\include\spine\ShearTimeline.h" />
+    <ClInclude Include="spine-cpp\include\spine\Skeleton.h" />
+    <ClInclude Include="spine-cpp\include\spine\SkeletonBinary.h" />
+    <ClInclude Include="spine-cpp\include\spine\SkeletonBounds.h" />
+    <ClInclude Include="spine-cpp\include\spine\SkeletonClipping.h" />
+    <ClInclude Include="spine-cpp\include\spine\SkeletonData.h" />
+    <ClInclude Include="spine-cpp\include\spine\SkeletonJson.h" />
+    <ClInclude Include="spine-cpp\include\spine\Skin.h" />
+    <ClInclude Include="spine-cpp\include\spine\Slot.h" />
+    <ClInclude Include="spine-cpp\include\spine\SlotData.h" />
+    <ClInclude Include="spine-cpp\include\spine\SpacingMode.h" />
+    <ClInclude Include="spine-cpp\include\spine\spine.h" />
+    <ClInclude Include="spine-cpp\include\spine\SpineObject.h" />
+    <ClInclude Include="spine-cpp\include\spine\SpineString.h" />
+    <ClInclude Include="spine-cpp\include\spine\TextureLoader.h" />
+    <ClInclude Include="spine-cpp\include\spine\Timeline.h" />
+    <ClInclude Include="spine-cpp\include\spine\TimelineType.h" />
+    <ClInclude Include="spine-cpp\include\spine\TransformConstraint.h" />
+    <ClInclude Include="spine-cpp\include\spine\TransformConstraintData.h" />
+    <ClInclude Include="spine-cpp\include\spine\TransformConstraintTimeline.h" />
+    <ClInclude Include="spine-cpp\include\spine\TransformMode.h" />
+    <ClInclude Include="spine-cpp\include\spine\TranslateTimeline.h" />
+    <ClInclude Include="spine-cpp\include\spine\Triangulator.h" />
+    <ClInclude Include="spine-cpp\include\spine\TwoColorTimeline.h" />
+    <ClInclude Include="spine-cpp\include\spine\Updatable.h" />
+    <ClInclude Include="spine-cpp\include\spine\Vector.h" />
+    <ClInclude Include="spine-cpp\include\spine\VertexAttachment.h" />
+    <ClInclude Include="spine-cpp\include\spine\VertexEffect.h" />
+    <ClInclude Include="spine-cpp\include\spine\Vertices.h" />
+    <ClInclude Include="spine-sdl\spine-sdl-cpp.h" />
+    <ClInclude Include="spine-sdl\stb_image.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="cunicode.cpp" />
+    <ClCompile Include="dllmain.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</CompileAsManaged>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</CompileAsManaged>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="listplug.cpp" />
+    <ClCompile Include="ListPlugWnd.cpp" />
+    <ClCompile Include="mainwindow.cpp" />
+    <ClCompile Include="MySdlText.cpp" />
+    <ClCompile Include="MySpineSdl.cpp" />
+    <ClCompile Include="spine-cpp\src\spine\Animation.cpp" />
+    <ClCompile Include="spine-cpp\src\spine\AnimationState.cpp" />
+    <ClCompile Include="spine-cpp\src\spine\AnimationStateData.cpp" />
+    <ClCompile Include="spine-cpp\src\spine\Atlas.cpp" />
+    <ClCompile Include="spine-cpp\src\spine\AtlasAttachmentLoader.cpp" />
+    <ClCompile Include="spine-cpp\src\spine\Attachment.cpp" />
+    <ClCompile Include="spine-cpp\src\spine\AttachmentLoader.cpp" />
+    <ClCompile Include="spine-cpp\src\spine\AttachmentTimeline.cpp" />
+    <ClCompile Include="spine-cpp\src\spine\Bone.cpp" />
+    <ClCompile Include="spine-cpp\src\spine\BoneData.cpp" />
+    <ClCompile Include="spine-cpp\src\spine\BoundingBoxAttachment.cpp" />
+    <ClCompile Include="spine-cpp\src\spine\ClippingAttachment.cpp" />
+    <ClCompile Include="spine-cpp\src\spine\ColorTimeline.cpp" />
+    <ClCompile Include="spine-cpp\src\spine\Constraint.cpp" />
+    <ClCompile Include="spine-cpp\src\spine\CurveTimeline.cpp" />
+    <ClCompile Include="spine-cpp\src\spine\DeformTimeline.cpp" />
+    <ClCompile Include="spine-cpp\src\spine\DrawOrderTimeline.cpp" />
+    <ClCompile Include="spine-cpp\src\spine\Event.cpp" />
+    <ClCompile Include="spine-cpp\src\spine\EventData.cpp" />
+    <ClCompile Include="spine-cpp\src\spine\EventTimeline.cpp" />
+    <ClCompile Include="spine-cpp\src\spine\Extension.cpp" />
+    <ClCompile Include="spine-cpp\src\spine\IkConstraint.cpp" />
+    <ClCompile Include="spine-cpp\src\spine\IkConstraintData.cpp" />
+    <ClCompile Include="spine-cpp\src\spine\IkConstraintTimeline.cpp" />
+    <ClCompile Include="spine-cpp\src\spine\Json.cpp" />
+    <ClCompile Include="spine-cpp\src\spine\LinkedMesh.cpp" />
+    <ClCompile Include="spine-cpp\src\spine\MathUtil.cpp" />
+    <ClCompile Include="spine-cpp\src\spine\MeshAttachment.cpp" />
+    <ClCompile Include="spine-cpp\src\spine\PathAttachment.cpp" />
+    <ClCompile Include="spine-cpp\src\spine\PathConstraint.cpp" />
+    <ClCompile Include="spine-cpp\src\spine\PathConstraintData.cpp" />
+    <ClCompile Include="spine-cpp\src\spine\PathConstraintMixTimeline.cpp" />
+    <ClCompile Include="spine-cpp\src\spine\PathConstraintPositionTimeline.cpp" />
+    <ClCompile Include="spine-cpp\src\spine\PathConstraintSpacingTimeline.cpp" />
+    <ClCompile Include="spine-cpp\src\spine\PointAttachment.cpp" />
+    <ClCompile Include="spine-cpp\src\spine\RegionAttachment.cpp" />
+    <ClCompile Include="spine-cpp\src\spine\RotateTimeline.cpp" />
+    <ClCompile Include="spine-cpp\src\spine\RTTI.cpp" />
+    <ClCompile Include="spine-cpp\src\spine\ScaleTimeline.cpp" />
+    <ClCompile Include="spine-cpp\src\spine\ShearTimeline.cpp" />
+    <ClCompile Include="spine-cpp\src\spine\Skeleton.cpp" />
+    <ClCompile Include="spine-cpp\src\spine\SkeletonBinary.cpp" />
+    <ClCompile Include="spine-cpp\src\spine\SkeletonBounds.cpp" />
+    <ClCompile Include="spine-cpp\src\spine\SkeletonClipping.cpp" />
+    <ClCompile Include="spine-cpp\src\spine\SkeletonData.cpp" />
+    <ClCompile Include="spine-cpp\src\spine\SkeletonJson.cpp" />
+    <ClCompile Include="spine-cpp\src\spine\Skin.cpp" />
+    <ClCompile Include="spine-cpp\src\spine\Slot.cpp" />
+    <ClCompile Include="spine-cpp\src\spine\SlotData.cpp" />
+    <ClCompile Include="spine-cpp\src\spine\SpineObject.cpp" />
+    <ClCompile Include="spine-cpp\src\spine\TextureLoader.cpp" />
+    <ClCompile Include="spine-cpp\src\spine\Timeline.cpp" />
+    <ClCompile Include="spine-cpp\src\spine\TransformConstraint.cpp" />
+    <ClCompile Include="spine-cpp\src\spine\TransformConstraintData.cpp" />
+    <ClCompile Include="spine-cpp\src\spine\TransformConstraintTimeline.cpp" />
+    <ClCompile Include="spine-cpp\src\spine\TranslateTimeline.cpp" />
+    <ClCompile Include="spine-cpp\src\spine\Triangulator.cpp" />
+    <ClCompile Include="spine-cpp\src\spine\TwoColorTimeline.cpp" />
+    <ClCompile Include="spine-cpp\src\spine\Updatable.cpp" />
+    <ClCompile Include="spine-cpp\src\spine\VertexAttachment.cpp" />
+    <ClCompile Include="spine-cpp\src\spine\VertexEffect.cpp" />
+    <ClCompile Include="spine-sdl\spine-sdl-cpp.cpp" />
+    <ClCompile Include="SpineView2.cpp" />
+    <ClCompile Include="stdafx.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="listplug.def" />
+    <None Include="SDL2-ttf\lib\x86\SDL2_ttf.dll" />
+    <None Include="SDL\lib\x86\SDL2.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Font Include="Debug\arial.ttf" />
+    <Font Include="Release\arial.ttf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="SDL2-ttf\lib\x86\freetype.lib" />
+    <Library Include="SDL2-ttf\lib\x86\freetyped.lib" />
+    <Library Include="SDL2-ttf\lib\x86\SDL2_ttf-static.lib" />
+    <Library Include="SDL2-ttf\lib\x86\SDL2_ttf.lib" />
+    <Library Include="SDL2-ttf\lib\x86\SDL2_ttfd-static.lib" />
+    <Library Include="SDL\lib\x86\SDL2-static.lib" />
+    <Library Include="SDL\lib\x86\SDL2-staticd.lib" />
+    <Library Include="SDL\lib\x86\SDL2.lib" />
+    <Library Include="SDL\lib\x86\SDL2d.lib" />
+    <Library Include="SDL\lib\x86\SDL2main.lib" />
+    <Library Include="SDL\lib\x86\SDL2test.lib" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

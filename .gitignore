@@ -1,0 +1,9 @@
+.svn
+.vs
+Debug
+Release
+myreadme.txt
+*.user
+*.opendb
+*.db
+*.bak

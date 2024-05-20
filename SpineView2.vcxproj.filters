@@ -1,0 +1,774 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+    <Text Include="SDL2-ttf\lib\x86\LICENSE.freetype.txt" />
+    <Text Include="SDL2-ttf\lib\x86\LICENSE.harfbuzz.txt" />
+    <Text Include="SDL2-ttf\lib\x86\LICENSE.zlib.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="listplug.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="mainwindow.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ListPlugWnd.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="cunicode.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="spine-cpp\include\spine\Animation.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="spine-cpp\include\spine\AnimationState.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="spine-cpp\include\spine\AnimationStateData.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="spine-cpp\include\spine\Atlas.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="spine-cpp\include\spine\AtlasAttachmentLoader.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="spine-cpp\include\spine\Attachment.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="spine-cpp\include\spine\AttachmentLoader.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="spine-cpp\include\spine\AttachmentTimeline.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="spine-cpp\include\spine\AttachmentType.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="spine-cpp\include\spine\BlendMode.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="spine-cpp\include\spine\Bone.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="spine-cpp\include\spine\BoneData.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="spine-cpp\include\spine\BoundingBoxAttachment.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="spine-cpp\include\spine\ClippingAttachment.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="spine-cpp\include\spine\Color.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="spine-cpp\include\spine\ColorTimeline.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="spine-cpp\include\spine\Constraint.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="spine-cpp\include\spine\ContainerUtil.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="spine-cpp\include\spine\CurveTimeline.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="spine-cpp\include\spine\Debug.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="spine-cpp\include\spine\DeformTimeline.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="spine-cpp\include\spine\dll.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="spine-cpp\include\spine\DrawOrderTimeline.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="spine-cpp\include\spine\Event.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="spine-cpp\include\spine\EventData.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="spine-cpp\include\spine\EventTimeline.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="spine-cpp\include\spine\Extension.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="spine-cpp\include\spine\HashMap.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="spine-cpp\include\spine\HasRendererObject.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="spine-cpp\include\spine\IkConstraint.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="spine-cpp\include\spine\IkConstraintData.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="spine-cpp\include\spine\IkConstraintTimeline.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="spine-cpp\include\spine\Json.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="spine-cpp\include\spine\LinkedMesh.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="spine-cpp\include\spine\MathUtil.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="spine-cpp\include\spine\MeshAttachment.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="spine-cpp\include\spine\MixBlend.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="spine-cpp\include\spine\MixDirection.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="spine-cpp\include\spine\PathAttachment.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="spine-cpp\include\spine\PathConstraint.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="spine-cpp\include\spine\PathConstraintData.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="spine-cpp\include\spine\PathConstraintMixTimeline.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="spine-cpp\include\spine\PathConstraintPositionTimeline.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="spine-cpp\include\spine\PathConstraintSpacingTimeline.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="spine-cpp\include\spine\PointAttachment.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="spine-cpp\include\spine\Pool.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="spine-cpp\include\spine\PositionMode.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="spine-cpp\include\spine\RegionAttachment.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="spine-cpp\include\spine\RotateMode.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="spine-cpp\include\spine\RotateTimeline.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="spine-cpp\include\spine\RTTI.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="spine-cpp\include\spine\ScaleTimeline.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="spine-cpp\include\spine\ShearTimeline.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="spine-cpp\include\spine\Skeleton.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="spine-cpp\include\spine\SkeletonBinary.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="spine-cpp\include\spine\SkeletonBounds.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="spine-cpp\include\spine\SkeletonClipping.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="spine-cpp\include\spine\SkeletonData.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="spine-cpp\include\spine\SkeletonJson.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="spine-cpp\include\spine\Skin.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="spine-cpp\include\spine\Slot.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="spine-cpp\include\spine\SlotData.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="spine-cpp\include\spine\SpacingMode.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="spine-cpp\include\spine\spine.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="spine-cpp\include\spine\SpineObject.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="spine-cpp\include\spine\SpineString.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="spine-cpp\include\spine\TextureLoader.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="spine-cpp\include\spine\Timeline.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="spine-cpp\include\spine\TimelineType.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="spine-cpp\include\spine\TransformConstraint.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="spine-cpp\include\spine\TransformConstraintData.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="spine-cpp\include\spine\TransformConstraintTimeline.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="spine-cpp\include\spine\TransformMode.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="spine-cpp\include\spine\TranslateTimeline.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="spine-cpp\include\spine\Triangulator.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="spine-cpp\include\spine\TwoColorTimeline.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="spine-cpp\include\spine\Updatable.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="spine-cpp\include\spine\Vector.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="spine-cpp\include\spine\VertexAttachment.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="spine-cpp\include\spine\VertexEffect.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="spine-cpp\include\spine\Vertices.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="spine-sdl\spine-sdl-cpp.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="spine-sdl\stb_image.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MySpineSdl.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MySdlText.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL\include\begin_code.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL\include\close_code.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL\include\SDL.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL\include\SDL_assert.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL\include\SDL_atomic.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL\include\SDL_audio.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL\include\SDL_bits.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL\include\SDL_blendmode.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL\include\SDL_clipboard.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL\include\SDL_config.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL\include\SDL_cpuinfo.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL\include\SDL_egl.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL\include\SDL_endian.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL\include\SDL_error.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL\include\SDL_events.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL\include\SDL_filesystem.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL\include\SDL_gamecontroller.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL\include\SDL_gesture.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL\include\SDL_guid.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL\include\SDL_haptic.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL\include\SDL_hidapi.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL\include\SDL_hints.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL\include\SDL_joystick.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL\include\SDL_keyboard.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL\include\SDL_keycode.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL\include\SDL_loadso.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL\include\SDL_locale.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL\include\SDL_log.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL\include\SDL_main.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL\include\SDL_messagebox.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL\include\SDL_metal.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL\include\SDL_misc.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL\include\SDL_mouse.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL\include\SDL_mutex.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL\include\SDL_name.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL\include\SDL_opengl.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL\include\SDL_opengl_glext.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL\include\SDL_opengles.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL\include\SDL_opengles2.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL\include\SDL_opengles2_gl2.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL\include\SDL_opengles2_gl2ext.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL\include\SDL_opengles2_gl2platform.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL\include\SDL_opengles2_khrplatform.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL\include\SDL_pixels.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL\include\SDL_platform.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL\include\SDL_power.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL\include\SDL_quit.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL\include\SDL_rect.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL\include\SDL_render.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL\include\SDL_revision.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL\include\SDL_rwops.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL\include\SDL_scancode.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL\include\SDL_sensor.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL\include\SDL_shape.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL\include\SDL_stdinc.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL\include\SDL_surface.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL\include\SDL_system.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL\include\SDL_syswm.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL\include\SDL_test.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL\include\SDL_test_assert.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL\include\SDL_test_common.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL\include\SDL_test_compare.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL\include\SDL_test_crc32.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL\include\SDL_test_font.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL\include\SDL_test_fuzzer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL\include\SDL_test_harness.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL\include\SDL_test_images.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL\include\SDL_test_log.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL\include\SDL_test_md5.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL\include\SDL_test_memory.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL\include\SDL_test_random.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL\include\SDL_thread.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL\include\SDL_timer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL\include\SDL_touch.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL\include\SDL_types.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL\include\SDL_version.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL\include\SDL_video.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL\include\SDL_vulkan.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL2-ttf\include\SDL_ttf.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SpineView2.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="dllmain.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mainwindow.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ListPlugWnd.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="listplug.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="cunicode.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="spine-cpp\src\spine\Animation.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="spine-cpp\src\spine\AnimationState.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="spine-cpp\src\spine\AnimationStateData.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="spine-cpp\src\spine\Atlas.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="spine-cpp\src\spine\AtlasAttachmentLoader.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="spine-cpp\src\spine\Attachment.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="spine-cpp\src\spine\AttachmentLoader.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="spine-cpp\src\spine\AttachmentTimeline.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="spine-cpp\src\spine\Bone.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="spine-cpp\src\spine\BoneData.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="spine-cpp\src\spine\BoundingBoxAttachment.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="spine-cpp\src\spine\ClippingAttachment.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="spine-cpp\src\spine\ColorTimeline.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="spine-cpp\src\spine\Constraint.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="spine-cpp\src\spine\CurveTimeline.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="spine-cpp\src\spine\DeformTimeline.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="spine-cpp\src\spine\DrawOrderTimeline.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="spine-cpp\src\spine\Event.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="spine-cpp\src\spine\EventData.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="spine-cpp\src\spine\EventTimeline.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="spine-cpp\src\spine\Extension.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="spine-cpp\src\spine\IkConstraint.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="spine-cpp\src\spine\IkConstraintData.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="spine-cpp\src\spine\IkConstraintTimeline.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="spine-cpp\src\spine\Json.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="spine-cpp\src\spine\LinkedMesh.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="spine-cpp\src\spine\MathUtil.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="spine-cpp\src\spine\MeshAttachment.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="spine-cpp\src\spine\PathAttachment.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="spine-cpp\src\spine\PathConstraint.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="spine-cpp\src\spine\PathConstraintData.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="spine-cpp\src\spine\PathConstraintMixTimeline.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="spine-cpp\src\spine\PathConstraintPositionTimeline.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="spine-cpp\src\spine\PathConstraintSpacingTimeline.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="spine-cpp\src\spine\PointAttachment.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="spine-cpp\src\spine\RegionAttachment.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="spine-cpp\src\spine\RotateTimeline.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="spine-cpp\src\spine\RTTI.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="spine-cpp\src\spine\ScaleTimeline.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="spine-cpp\src\spine\ShearTimeline.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="spine-cpp\src\spine\Skeleton.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="spine-cpp\src\spine\SkeletonBinary.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="spine-cpp\src\spine\SkeletonBounds.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="spine-cpp\src\spine\SkeletonClipping.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="spine-cpp\src\spine\SkeletonData.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="spine-cpp\src\spine\SkeletonJson.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="spine-cpp\src\spine\Skin.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="spine-cpp\src\spine\Slot.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="spine-cpp\src\spine\SlotData.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="spine-cpp\src\spine\SpineObject.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="spine-cpp\src\spine\TextureLoader.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="spine-cpp\src\spine\Timeline.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="spine-cpp\src\spine\TransformConstraint.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="spine-cpp\src\spine\TransformConstraintData.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="spine-cpp\src\spine\TransformConstraintTimeline.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="spine-cpp\src\spine\TranslateTimeline.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="spine-cpp\src\spine\Triangulator.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="spine-cpp\src\spine\TwoColorTimeline.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="spine-cpp\src\spine\Updatable.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="spine-cpp\src\spine\VertexAttachment.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="spine-cpp\src\spine\VertexEffect.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="spine-sdl\spine-sdl-cpp.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MySpineSdl.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MySdlText.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="listplug.def">
+      <Filter>源文件</Filter>
+    </None>
+    <None Include="SDL\lib\x86\SDL2.dll" />
+    <None Include="SDL2-ttf\lib\x86\SDL2_ttf.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Font Include="Debug\arial.ttf" />
+    <Font Include="Release\arial.ttf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="SDL\lib\x86\SDL2.lib" />
+    <Library Include="SDL\lib\x86\SDL2d.lib" />
+    <Library Include="SDL\lib\x86\SDL2main.lib" />
+    <Library Include="SDL\lib\x86\SDL2-staticd.lib" />
+    <Library Include="SDL\lib\x86\SDL2test.lib" />
+    <Library Include="SDL2-ttf\lib\x86\freetyped.lib" />
+    <Library Include="SDL2-ttf\lib\x86\SDL2_ttf.lib" />
+    <Library Include="SDL2-ttf\lib\x86\SDL2_ttfd-static.lib" />
+    <Library Include="SDL\lib\x86\SDL2-static.lib" />
+    <Library Include="SDL2-ttf\lib\x86\freetype.lib" />
+    <Library Include="SDL2-ttf\lib\x86\SDL2_ttf-static.lib" />
+  </ItemGroup>
+</Project>
